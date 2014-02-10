@@ -1,0 +1,144 @@
+/**
+ * Filename: style.css
+ * Author: Brian Soe, Angela Pate, Thomas Chang
+ * Description: Main CSS
+ */
+
+@charset "utf-8";
+
+body
+{
+	font-family: 'Raleway', Helvetica, Arial;
+	background-color: #FBFBFB;
+}
+
+*
+{
+	margin: 0 auto;
+}
+
+/* Logo */
+#logo
+{
+	left: 40px;
+	height: 70px;
+	width: 230px;
+	position: fixed;
+	top: 40px;
+}
+
+#logo a img
+{
+	width: 250px;
+}
+
+/* Navigation */
+#nav
+{
+	left: 0;
+	list-style: none;
+	position: fixed;
+	top: 135px;
+	float: left;
+}
+
+#nav li
+{
+	margin-bottom: 0px; 
+	list-style: none; 
+}
+
+#nav a
+{
+	background-color: #F0F0F0;
+	color: #0F0F0F;
+	display: block;
+	font-size: 11px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 225px;
+	border-left: 5px solid #00508F;
+	letter-spacing: 1px;
+}
+
+#nav a:hover
+{
+	background-color: #00508F;
+	color: #F0F0F0;
+}
+
+#navheader
+{
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 225px;
+	letter-spacing: 1px;
+	background-color: #0F0F0F;
+	border-left: 5px solid #0F0F0F;
+	color: #F0F0F0;
+}
+
+#navheader a:hover
+{
+	background-color: #0F0F0F;
+	border-left: 5px solid #0F0F0F;
+	color: #F0F0F0;
+}
+
+/* Content */
+#container
+{
+	margin-left: 150px;
+	width: 900px;
+	background-color: #F0F0F0;
+}
+
+.section
+{
+	border-bottom: 2px solid;
+	padding: 50px;
+}
+
+.section p:last-child
+{
+	margin-bottom: 0;
+}
+
+#page
+{
+	width: 900px;
+	height: 100%;
+	text-align: left;
+	border: 0px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+/* others */
+.scrollup
+{
+	width: 70px;
+	height: 70px;
+	opacity: 0.9;
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
+	display: none;
+	text-indent: -9999px;
+}
+
+.screenshot
+{
+	margin: 0 auto;
+	float: left;
+	padding-right: 20px;
+}
+
+.screenshot img
+{
+	border-radius: 50%;
+}
