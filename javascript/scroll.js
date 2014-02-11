@@ -10,7 +10,7 @@ $(function(){
 			var toPosition = $toElement.position().top;
 			$("body,html").animate({
 				scrollTop : toPosition
-			},500,"easeOutExpo");
+			},700,"easeOutExpo");
 			var $currLoc = $('li[class="current"]');
 			$currLoc.removeClass("current");
 			var inthash = parseInt(hash)+2;
@@ -25,7 +25,7 @@ $(function(){
 	}
 	$(window).scroll(function(e){
 		if($("a").hash){
-			var hash = this.hash.substr(1);
+			var hash = $("a").hash.substr(1);
 			var $toElement = $("a[name="+hash+"]");
 			var toPosition = $toElement.position().top;
 			$("body,html").animate({

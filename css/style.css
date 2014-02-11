@@ -10,7 +10,6 @@ body
 {
   font-family: 'Raleway', Helvetica, Arial;
   background: url("../img/background.png") no-repeat center center fixed;
-  opacity: 0.9;
 }
 
 h3
@@ -107,6 +106,8 @@ h3
   margin-left: 150px;
   width: 900px;
   background-color: #F0F0F0;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
 .section
@@ -142,6 +143,21 @@ h3
   margin: 0 auto;
 }
 
+blockquote{
+  color:#282828;
+  font-size:14px;
+  font-style: italic;
+  width: 600px;
+  margin: 0 auto;
+  padding:20px;
+  border: 1px solid #3F3F3F;
+  background-color: #FFFFFF;
+}
+blockquote cite{
+  display: block;
+  margin-left: 425px;
+}
+
 /* others */
 
 .screenshot
@@ -149,9 +165,12 @@ h3
   margin: 0 auto;
   float: left;
   padding-right: 20px;
+  overflow: hidden;
 }
 
 .screenshot img
 {
-  border-radius: 50%;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px dashed black;
 }
