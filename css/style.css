@@ -9,7 +9,13 @@
 body
 {
   font-family: 'Raleway', Helvetica, Arial;
-  background-color: #FBFBFB;
+  background: url("../img/background.png") no-repeat center center fixed;
+  opacity: 0.9;
+}
+
+h3
+{
+  color: #00508F;
 }
 
 *
@@ -89,6 +95,12 @@ body
   color: #F0F0F0;
 }
 
+#nav .current a
+{
+  background-color: #00508F;
+  color: #F0F0F0; 
+}
+
 /* Content */
 #container
 {
@@ -99,13 +111,25 @@ body
 
 .section
 {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #D0D0D0;
   padding: 50px;
 }
 
 .section p:last-child
 {
   margin-bottom: 0;
+}
+
+.section a
+{
+  text-decoration: none;
+  color: #00508F;
+}
+
+.section a:hover
+{
+  text-decoration: underline;
+  color: #F00000;
 }
 
 #page
@@ -119,17 +143,6 @@ body
 }
 
 /* others */
-.scrollup
-{
-  width: 70px;
-  height: 70px;
-  opacity: 0.9;
-  position: fixed;
-  bottom: 50px;
-  right: 100px;
-  display: none;
-  text-indent: -9999px;
-}
 
 .screenshot
 {

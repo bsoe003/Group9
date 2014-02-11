@@ -9,13 +9,12 @@ $(document).ready(function(){
       $('.scrollup').fadeOut();
     }
   });
+  $("#nav > li > div").click(function(){
+    if(false == $(this).next().is(':visible'))
+    {
+      $('#nav ul').slideUp(350);
+    }
+    $(this).next().slideToggle(300);
+  });
+  $('#nav ul:eq(0)').show();
 });
-
-$("#nav > li > div").click(function(){
-  if(false == $(this).next().is(':visible'))
-  {
-    $('#nav ul').slideUp(350);
-  }
-  $(this).next().slideToggle(300);
-});
-$('#nav ul:eq(0)').show();
