@@ -104,12 +104,26 @@ h3
   margin-left: 150px;
   width: 100%;
   background-color: #F0F0F0;
+  /*text-align: center;*/
   /*border-left: 1px solid gray;
   border-right: 1px solid gray;*/
 }
 
+#banner
+{
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+#banner img
+{
+  width: 100%;
+}
+
 .section
 {
+  text-align: left;
   border-bottom: 2px solid #D0D0D0;
   padding: 50px;
 }
